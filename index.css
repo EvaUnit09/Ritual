@@ -1,27 +1,242 @@
-* {background-color: black}
+* {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+header {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  background: transparent;
+}
+header > h1 {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  font-size: 3rem;
+}
+
+header > .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+}
+header .overlay-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+header p {
+  background-color: transparent;
+}
+
+header button {
+  background-color: transparent;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+header .overlay-content button:hover {
+  background-color: #000000;
+  opacity: 70%;
+}
+.video-primary {
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+section {
+  margin-top: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto; /* Row for header and row for images */
+  gap: 10px; /* Gap between the rows */
+  background-color: black;
+  color: white;
+}
+.header > h2 {
+  font-size: 3rem;
+  margin-left: 40px;
+}
+.header > p {
+  width: 500px;
+  height: 80px;
+  margin-right: 200px;
+  
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  grid-template-rows: auto; /* Single row */
+}
+
+.image-container {
+  display: grid;
+}
+
+.image-item {
+  width: 100%; /* Ensure images take full width of their grid cell */
+}
+
+
+
+.section-container {
+  display: flex; /* Use Flexbox to lay out children */
+}
+
+.video-secondary {
+  flex: 1; /* Allow the video to grow and shrink as needed */
+  width: 50%; /* Take up half of the container's width */
+  height: 720px; /* Maintain aspect ratio */
+}
+
+.section-practice {
+  flex: 1; /* Allow the div to grow and shrink as needed */
+  padding: 20px; /* Add some padding around the content */
+  display: flex; /* Use Flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  text-align: center;
+}
+
+.button-28 {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+body {
+  background-color: #000000;
+  margin: 5px;
+}
 
 p {
-    color: white;
+  color: white;
+  font-size: large;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 h2 {
-    color: white;
+  color: white;
+  font-size: 3rem;
+}
+/* Testimonials Section Styles */
+.testimonials-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #000000;
+  padding: 40px;
+  text-align: center;
+  margin: 50px 50px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #000000;
-    padding: 10px;
-  }
-.grid-item {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.testimonial-container {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #ffffff;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.testimonial-author {
+  color: #ffffff;
+  font-weight: bold;
+  display: block; /* To ensure it takes its own line */
+  margin-top: 10px;
+}
+
+li {
+  color: #fff;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
