@@ -16,7 +16,7 @@ header > h1 {
   background: transparent;
   z-index: 1;
   position: absolute;
-  left: 50%;
+  left: 44%;
   font-size: 3rem;
 }
 
@@ -184,7 +184,7 @@ body {
 
 p {
   color: white;
-  font-size: large;
+  font-size: x-large;
 }
 
 h1 {
