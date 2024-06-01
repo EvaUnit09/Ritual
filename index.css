@@ -2,6 +2,13 @@
   background-color: black;
   box-sizing: border-box;
 }
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 header {
   color: white;
@@ -101,6 +108,17 @@ section {
   grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
   grid-template-rows: auto; /* Single row */
 }
+.music-grid {
+  flex: 1; /* Allow the div to grow and shrink as needed */
+  padding: 10px; /* Add some padding around the content */
+  display: flex; /* Use Flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  text-align: center;
+}
+.custom-grid-music {
+  display: inline-block;
+}
 
 .image-container {
   display: grid;
@@ -110,6 +128,9 @@ section {
   width: 100%; /* Ensure images take full width of their grid cell */
 }
 
+.image-item-2 {
+  width: 20%;
+}
 
 
 .section-container {
@@ -209,6 +230,9 @@ h2 {
 
 .testimonial-container {
   margin-bottom: 20px;
+  border: #ffffff;
+  border-radius: 1px;
+  border-style: solid;
 }
 
 blockquote {
@@ -239,4 +263,145 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+/* The Present Moment */
+.present-moment {
+  display: grid;
+  gap: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-column: 2 / span 10;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.body-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  align-self: auto;
+  width: 50%;
+}
+
+.end {
+  align-self: flex-end;
+}
+
+.logo-container {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+/* footer  */
+.footer-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.footer-nav {
+  grid-column: span 2;
+  background-color: #ffffff;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.footer-content {
+  grid-column: span 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+}
+
+.subscription-text {
+  font-size: 1rem;
+  font-family: monospace;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.subscription-text span {
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.subscription-cta {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  width: fit-content;
+  background-color: white;
+}
+
+.subscription-cta .cta-arrow {
+  margin-left: 0.5rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+.footer-links li span {
+  color: rgb(0, 0, 0);
+  font-size: 0.875rem;
+  background-color: #ffffff;
 }
