@@ -95,12 +95,14 @@ section {
   width: 500px;
   height: 80px;
   margin-right: 200px;
+  margin-bottom: 90px;
   
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 200px;
 }
 
 .custom-grid {
@@ -125,7 +127,7 @@ section {
 }
 
 .image-item {
-  width: 100%; /* Ensure images take full width of their grid cell */
+  width: 100%; 
 }
 
 .image-item-2 {
@@ -144,11 +146,11 @@ section {
 }
 
 .section-practice {
-  flex: 1; /* Allow the div to grow and shrink as needed */
-  padding: 20px; /* Add some padding around the content */
-  display: flex; /* Use Flexbox for vertical alignment */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center children vertically */
+  flex: 1; 
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
   text-align: center;
 }
 
@@ -219,8 +221,8 @@ h2 {
 /* Testimonials Section Styles */
 .testimonials-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: start;
   background-color: #000000;
   padding: 40px;
@@ -316,7 +318,7 @@ ul {
 }
 
 .footer-nav {
-  grid-column: span 2;
+  grid-column: span 10;
   background-color: #ffffff;
 }
 
@@ -324,7 +326,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #fff;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-nav ul li {
@@ -334,7 +338,7 @@ ul {
 
 .footer-nav ul li a {
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .footer-content {
