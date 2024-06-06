@@ -2,12 +2,12 @@
   background-color: black;
   box-sizing: border-box;
 }
+
 .spectral-regular {
   font-family: "Spectral", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 
 
 header {
@@ -19,6 +19,31 @@ header {
   overflow: hidden;
   background: transparent;
 }
+
+header > nav {
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+
+}
+header ul {
+  background: transparent;
+
+}
+
+header li, a {
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header ul li a {
+  color: #ffffff;
+}
+
 header > h1 {
   background: transparent;
   z-index: 1;
@@ -76,6 +101,7 @@ header .overlay-content button:hover {
   
 }
 
+
 section {
   margin-top: 50px;
 }
@@ -132,6 +158,7 @@ section {
 
 .image-item-2 {
   width: 20%;
+  height: 20%;
 }
 
 
@@ -172,6 +199,7 @@ section {
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   outline: none;
   padding: 16px 24px;
   text-align: center;
@@ -258,9 +286,7 @@ blockquote:after {
   margin-top: 10px;
 }
 
-li {
-  color: #fff;
-}
+
 ul {
   list-style: none;
   display: flex;
@@ -334,11 +360,13 @@ ul {
 .footer-nav ul li {
   margin-bottom: 0.5rem;
   background-color: white;
+  color: #1A1A1A;
 }
 
 .footer-nav ul li a {
   text-decoration: none;
   background-color: #ffffff;
+  color: #1A1A1A;
 }
 
 .footer-content {
