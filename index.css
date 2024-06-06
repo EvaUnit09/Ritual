@@ -25,10 +25,14 @@ header > nav {
   z-index: 1;
   background: transparent;
   width: 100%;
-
+  display: flex;
+  justify-content: space-between;
 }
 header ul {
   background: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
 }
 
@@ -38,10 +42,15 @@ header li, a {
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
+  padding-right: 20px;
 }
 
 header ul li a {
   color: #ffffff;
+}
+
+#datetime {
+  background: transparent;
 }
 
 header > h1 {
@@ -145,11 +154,15 @@ section {
   text-align: center;
 }
 .custom-grid-music {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .image-container {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
 }
 
 .image-item {
@@ -159,6 +172,9 @@ section {
 .image-item-2 {
   width: 20%;
   height: 20%;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 
