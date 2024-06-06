@@ -62,13 +62,16 @@ header > h1 {
   background: transparent;
   z-index: 1;
   position: absolute;
-  left: 44%;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 5rem;
+  width: 100%;
+  margin-top: 25%;
+
 }
 
 header > .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
