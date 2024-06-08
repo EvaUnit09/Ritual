@@ -298,11 +298,10 @@ h2 {
   background-color: #000000;
   text-align: center;
   height: 100%;
-  width: 100%;
+  width: 99%;
 }
 
 .testimonial-container {
-  margin-bottom: 10px;
   border: #ffffff;
   border-radius: 1px;
   border-style: solid;
@@ -315,6 +314,7 @@ blockquote {
   font-style: italic;
   color: #ffffff;
   quotes: "“" "”" "‘" "’";
+  margin: 0;
 }
 
 blockquote:before {
