@@ -15,28 +15,28 @@ This project aims to create a website dedicated to mindfulness and health, simil
 
 ## Development Plan
 
-### Phase 1: Learning and Setup (Weeks 1-2)
+### Phase 1: Learning and Setup 
 - Brush up on HTML, CSS, and JavaScript.
 - Get comfortable with React basics.
 - Set up the development environment.
 
-### Phase 2: Frontend Development (Weeks 3-5)
+### Phase 2: Frontend Development 
 - Create static pages with HTML and CSS.
 - Begin dynamic coding with JavaScript.
 
-### Phase 3: Backend Development (Weeks 6-8)
+### Phase 3: Backend Development 
 - Deep dive into Node.js and Express.js for server-side logic.
 - Start implementing basic backend features.
 
-### Phase 4: Database Integration (Weeks 9-10)
+### Phase 4: Database Integration
 - Learn MongoDB for data management.
 - Integrate the database with the backend.
 
-### Phase 5: Testing and Refinement (Week 11)
+### Phase 5: Testing and Refinement
 - Test all functionalities.
 - Debug and refine code.
 
-### Phase 6: Deployment (Week 12)
+### Phase 6: Deployment 
 - Deploy the website to a hosting service.
 - Perform final tests and launch.
 
